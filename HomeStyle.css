@@ -1,0 +1,111 @@
+
+
+/* Colour pallete */
+/* Primary #F9F8F6 */
+/* Secondary #EFE9E3 */
+/* Onclick,shadow #D9CFC7 */
+/* Buttons #C9B59C */
+
+
+*{
+    background-color:#F9F8F6 ;
+    font-family:monospace;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header{
+    margin: 0;
+    border-bottom:2px solid #EFE9E3;
+}
+
+/* NavBar */
+.navbar{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    padding-top: 100 rem;
+    display: flex;
+    flex-direction: row;
+}
+.nav-container{
+    justify-content: center;
+    align-items: center;
+}
+.website-logo-container{
+    padding-left: 5rem;
+}
+.link-list{
+    margin: 0;
+    padding-left: 50%;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+}
+.links{
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight:500;
+}
+.aboutme-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 25vh;
+    padding-right: 25vh;
+    padding-bottom: 15vh;
+    flex-direction: column;
+    margin: 10vh;
+
+}
+
+.aboutme{
+    font-size: 46px;
+    padding: 10px;
+}
+
+.aboutme-socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+.social-container{
+    padding: 15px;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #e7d6c1;
+    border-radius: 20px;
+    font-size: 24px;    
+    background-color: #FFF5E4;
+    text-decoration: none;
+    color: black;
+}
+.social-icon{
+    background-color: #FFF5E4;
+}
+
+
+.social-name{    
+    padding-left: 10px;
+    background-color: #FFF5E4;
+}
+
+.heading{
+    font-size: 48px;
+}
+
+.project-card-vertical{
+    display: flex;
+    flex-direction: row;
+}
+
+.project-card-horizontal{
+    display: flex;
+    flex-direction: column;
+}
