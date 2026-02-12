@@ -56,9 +56,9 @@ header{
     justify-content: center;
     padding-left: 25vh;
     padding-right: 25vh;
-    padding-bottom: 15vh;
+    padding-bottom: 25vh;
+    padding-top: 25vh;
     flex-direction: column;
-    margin: 10vh;
 
 }
 
@@ -98,14 +98,77 @@ header{
 
 .heading{
     font-size: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .project-card-vertical{
     display: flex;
     flex-direction: row;
+    padding-left: 25vh;
+    padding-right: 20vh;
+    padding-top: 10vh;
+    padding-bottom: 30vh;
 }
 
 .project-card-horizontal{
     display: flex;
     flex-direction: column;
+    padding-left: 10vh;
+}
+.Projectcard{
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 80vh;
+    width: 60vh;
+}
+.Projectcard div{
+    padding: 20px;
+}
+.Projectcard h2{
+    font-size: 20px;
+}
+.projectcard-description{
+    font-size: 15px;
+}
+
+.project-preview{
+    width: 100%;
+    height: 100%;
+    padding: 16px;
+    background:#fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-preview img{
+    max-width: 85%;
+    max-height: 85%;
+    object-fit: contain;
+    border-radius: 8px;
+}
+.projectcard-tags-container{
+    display: flex;
+    flex-direction: row;
+    gap: 1vh;
+}
+.projectcard-tags{
+    padding: 5px;
+    border: 1px solid #e7d6c1;
+    border-radius: 20px;
+    background-color: #FFF5E4;
+}
+.project-link{
+    display: flex;
+    flex-direction: row;
+}
+
+.project-link a{
+    padding: 10px;
+    border: #e7d6c1;
+    background: #FFF5E4;
 }
