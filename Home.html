@@ -6,6 +6,7 @@
     <title>Gokul Prasad Porfolio</title>
     <link rel="icon" type="image/x-icon" href="/imgs/favicon.ico">
     <link rel="stylesheet" href="HomeStyle.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <!-- Nav Bar -->
@@ -17,15 +18,15 @@
                 </div>
             </div>
             <ul class="link-list">
-                <li class="links"><a class="home-link">Home</a></li>
-                <li class="links"><a class="project-link">Projects</a></li>
-                <li class="links"><a class="contact-link">Contact</a></li>
+                <li class="links"><a class="home-link" href="#homeSection">Home</a></li>
+                <li class="links"><a class="project-link" href="#projectsSection" onclick="gotoProjects()">Projects</a></li>
+                <li class="links"><a class="contact-link" href="#contactSection">Contact</a></li>
                 <li class="links"><a class="hireme-link">Hire Me !!!</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="aboutme-container">
+    <div class="aboutme-container" id="homeSection">
         <p class="aboutme">Hello!! I'm Gokul Prasad, a&nbsp;Software&nbsp;developer interested in building solutions which solves real world problems and user friendly software solutions </p>
         
         <div class="aboutme-socials">
@@ -42,7 +43,7 @@
     </div>
 
 
-    <h1 class="heading">Projects</h1>
+    <h1 class="heading" id="projectsSection">Projects</h1>
 
     <div class="project-card-vertical">
         <div class="project-card-horizontal">
@@ -60,11 +61,15 @@
                 <div class="project-preview">
                     <img src="imgs/websitePreview/moviefinderPreview.png">
                 </div>
-                <div class="project-link"> 
-                    <a href="https://github.com/Gokulprasad33/What-Should-I-Watch" target="_blank">
-                        <img src="imgs/github-icon.svg" width="25px" height="25px"> 
-                        Source Code</a>
-                    <a href="https://whatshouldiwatchnow.netlify.app/" target="_blank">Live demo</a>
+                <div class="project-link-container"> 
+                    <a href="https://github.com/Gokulprasad33/What-Should-I-Watch" target="_blank" class="previewLink">
+                        <img src="imgs/github-icon.svg" width="35px" height="35px"> 
+                        Source Code 
+                    </a>
+                    <a href="https://whatshouldiwatchnow.netlify.app/" target="_blank" class="previewLink">
+                        <img src="imgs/link-icon.png" width="30px" height=auto>
+                        Live demo
+                    </a>
                 </div>
             </div>
 
@@ -82,10 +87,11 @@
                 <div class="project-preview">
                     <img src="imgs/websitePreview/BrainSyncPreview.png">
                 </div>
-                <div>
-                    <!-- Github image -->
-                    <img> 
-                    <a>Source Code</a>
+                <div class="project-link-container"> 
+                    <a href="https://github.com/Gokulprasad33/What-Should-I-Watch" target="_blank" class="previewLink">
+                        <img src="imgs/github-icon.svg" width="35px" height="35px"> 
+                        Source Code
+                    </a>
                 </div>
             </div>
         </div>
@@ -105,10 +111,11 @@
                 <div class="project-preview">
                     <img src="imgs/websitePreview/pomodorotimer.png ">
                 </div>
-                <div>
-                    <!-- Github image -->
-                    <img> 
-                    <a>Source Code</a>
+                <div class="project-link-container"> 
+                    <a href="https://github.com/Gokulprasad33/pomodoro-extension" target="_blank" class="previewLink">
+                        <img src="imgs/github-icon.svg" width="35px" height="35px"> 
+                        Source Code
+                    </a>
                 </div>
             </div>
         
@@ -127,22 +134,22 @@
                 <div class="project-preview">
                     <img src="/imgs/websitePreview/calculator.png">
                 </div>
-                <div>
-                    <!-- Github image -->
-                    <img> 
-                    <a>Source Code</a>
+                <div class="project-link-container"> 
+                    <a href="https://github.com/Gokulprasad33/Calculator-extension" target="_blank" class="previewLink">
+                        <img src="imgs/github-icon.svg" width="35px" height="35px"> 
+                        Source Code
+                    </a>
                 </div>
             </div>
         </div>
 
     </div>
-    <!-- https://github.com/Gokulprasad33/What-Should-I-Watch -->
-    <!-- Create a card -->
     
 
-    
+    <h1 class="heading" id="contactSection">Tech Stack</h1>
 
-    <h1 class="heading">Contact me</h1>
+
+    <h1 class="heading" id="contactSection">Contact me</h1>
     <div class="contact-container">
         <div class="socials-card">
             <img>
