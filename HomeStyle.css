@@ -196,3 +196,28 @@ header{
 .previewLink a{
     align-items: center;
 }
+
+
+
+.copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;   
+}
+
+.copyright a{
+    text-decoration: none;
+    background: none;
+    color: black;
+}
+
+a:hover, a:visited{
+    text-decoration: none;
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
