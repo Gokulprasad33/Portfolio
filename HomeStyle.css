@@ -12,11 +12,14 @@
     font-family:monospace;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden; 
 }
 
 header{
@@ -29,9 +32,9 @@ header{
     margin: 0;
     padding: 0;
     width: 100%;
-    padding-top: 100 rem;
     display: flex;
     flex-direction: row;
+    align-items: center; 
 }
 .nav-container{
     justify-content: center;
@@ -40,6 +43,11 @@ header{
 .website-logo-container{
     padding-left: 5rem;
 }
+
+.website-logo {
+    white-space: nowrap; 
+}
+
 .link-list{
     margin: 0;
     padding-left: 50%;
@@ -61,16 +69,20 @@ header{
     text-decoration: none;
     color: black;
 }
+
+.links a:hover {
+    color: #C9B59C; 
+}
+
+.work{
+    background-color: #eee1d2;
+}
 .aboutme-container{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 25vh;
-    padding-right: 25vh;
-    padding-bottom: 25vh;
-    padding-top: 25vh;
+    padding: 15vh 10vw; 
     flex-direction: column;
-
 }
 
 .aboutme{
@@ -81,7 +93,8 @@ header{
 .aboutme-socials{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center; 
+    flex-wrap: wrap; 
     gap: 20px;
 }
 .social-container{
@@ -96,9 +109,61 @@ header{
     background-color: #FFF5E4;
     text-decoration: none;
     color: black;
+    transition: transform 0.0s ease, box-shadow 0.2s ease; 
 }
+
+.social-container:hover {
+    transform: translateY(-2px); 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
+}
+
 .social-icon{
     background-color: #FFF5E4;
+}
+
+.techstack-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 4vh 10vw 8vh;
+    justify-items: center;
+}
+
+.techstack-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 110px;
+    border: 2px solid #e7d6c1;
+    border-radius: 20px;
+    background-color: #FFF5E4;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: default;
+}
+
+.techstack-item:hover {
+    transform: translateY(-3px); 
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5); 
+}
+
+.techstack-icon {
+    position: relative;
+    z-index: 2;
+    background-color: #FFF5E4;
+}
+
+.techstack-label {
+    position: relative;
+    z-index: 1; 
+    margin-top: 6px;
+    font-size: 13px;
+    font-family: monospace;
+    color: #888;
+    background-color: #FFF5E4;
+    text-align: center;
 }
 
 
@@ -112,21 +177,20 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 2vh 0; 
 }
 
 .project-card-vertical{
     display: flex;
     flex-direction: row;
-    padding-left: 25vh;
-    padding-right: 20vh;
-    padding-top: 10vh;
-    padding-bottom: 30vh;
+    padding: 10vh 10vw 30vh; 
+    justify-content: center; 
 }
 
 .project-card-horizontal{
     display: flex;
     flex-direction: column;
-    padding-left: 10vh;
+    padding-left: 5vh;
 }
 .Projectcard{
     display: flex;
@@ -135,6 +199,7 @@ header{
     overflow: hidden;
     height: 80vh;
     width: 60vh;
+    max-width: 100%; 
 }
 
 .Projectcard h2{
@@ -162,6 +227,7 @@ header{
 .projectcard-tags-container{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap; 
     gap: 1vh;
 }
 .projectcard-tags{
@@ -197,13 +263,75 @@ header{
     align-items: center;
 }
 
+.contact-section {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    padding: 8vh 8vw;
+    gap: 6vw;
+    align-items: center;
+}
 
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-shrink: 0;
+    min-width: 200px;
+}
+
+.contact-links-heading { 
+    font-size: 28px;
+    font-family: monospace;
+    margin-bottom: 10px;
+}
+
+.contact-links .social-container { 
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.contact-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    overflow: hidden;
+}
+
+.contact-heading { 
+    position: relative;
+    z-index: 1;
+    font-size: 56px;
+    font-family: monospace;
+    margin-bottom: 20px;
+}
+
+.contact-description { 
+    position: relative;
+    z-index: 1;
+    font-size: 20px;
+    line-height: 1.6;
+    max-width: 520px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.contact-container-child { 
+    position: relative;
+    z-index: 1;
+    align-self: flex-start;
+    font-size: 22px;
+    padding: 16px 28px;
+}
 
 .copyright{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 16px;   
+    font-size: 16px;
+    padding: 2vh 0;
 }
 
 .copyright a{
@@ -216,8 +344,194 @@ a:hover, a:visited{
     text-decoration: none;
 }
 
-
 a{
     text-decoration: none;
     color: black;
+}
+
+
+/* Tablet */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .website-logo-container {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .link-list {
+        padding-left: 0;
+        margin-top: 10px;
+        gap: 10px;
+    }
+
+    .links {
+        padding-left: 0;
+        font-size: 18px;
+    }
+
+    .aboutme-container {
+        padding: 10vh 5vw;
+    }
+
+    .aboutme {
+        font-size: 32px;
+    }
+
+    .project-card-vertical {
+        flex-direction: column;
+        padding: 5vh 5vw 15vh;
+        align-items: center;
+    }
+
+    .project-card-horizontal {
+        padding-left: 0;
+        align-items: center;
+    }
+
+    .Projectcard {
+        width: 80vw;
+        height: auto;
+        margin-bottom: 4vh;
+    }
+
+    .project-preview img {
+        max-width: 100%;
+    }
+
+    /* Headings */
+    .heading {
+        font-size: 36px;
+    }
+
+    .techstack-list {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 4vh 5vw 8vh;
+    }
+
+    .contact-section {
+        flex-direction: column;
+        min-height: auto;
+        padding: 6vh 5vw;
+        gap: 4vh;
+    }
+    .contact-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        min-width: 0;
+    }
+
+    .contact-links .social-container {
+        width: auto;
+    }
+
+    .contact-content {
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-heading {
+        font-size: 40px;
+    }
+
+    .contact-bg-text {
+        font-size: 80px;
+    }
+
+    .contact-description {
+        font-size: 18px;
+    }
+
+    .contact-container-child {
+        align-self: center;
+    }
+}
+
+
+/* Phone */
+@media (max-width: 480px) {
+
+    .website-logo {
+        font-size: 18px;
+    }
+
+    .links {
+        font-size: 15px;
+    }
+
+    .aboutme-container {
+        padding: 6vh 4vw;
+    }
+
+    .aboutme {
+        font-size: 22px;
+    }
+
+    .social-container {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .project-card-vertical {
+        padding: 4vh 4vw 10vh;
+    }
+
+    .Projectcard {
+        width: 92vw;
+    }
+
+    .heading {
+        font-size: 28px;
+    }
+
+    .techstack-list {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 3vh 4vw 6vh;
+    }
+
+    .techstack-item {
+        width: 110px;
+        height: 95px;
+    }
+
+    .techstack-label {
+        font-size: 11px;
+    }
+
+    .contact-section {
+        padding: 4vh 4vw;
+        gap: 3vh;
+    }
+
+    .contact-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-heading {
+        font-size: 28px;
+    }
+
+    .contact-bg-text {
+        font-size: 50px;
+    }
+
+    .contact-description {
+        font-size: 16px;
+    }
+
+    .contact-container-child {
+        font-size: 18px;
+        padding: 12px 20px;
+    }
+
+    .copyright {
+        font-size: 14px;
+    }
 }

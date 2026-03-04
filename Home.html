@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gokul Prasad Porfolio</title>
+    <title>Gokul Prasad</title>
     <link rel="icon" type="image/x-icon" href="/imgs/favicon.ico">
     <link rel="stylesheet" href="HomeStyle.css">
     <script src="script.js"></script>
@@ -21,13 +21,13 @@
                 <li class="links"><a class="home-link" href="#homeSection">Home</a></li>
                 <li class="links"><a class="project-link" href="#projectsSection" onclick="gotoProjects()">Projects</a></li>
                 <li class="links"><a class="contact-link" href="#contactSection">Contact</a></li>
-                <li class="links"><a class="hireme-link">Resume</a></li>
+                <li class="links"><a class="hireme-link" href="assets/Resume.pdf" target="_blank">Resume</a></li>
             </ul>
         </nav>
     </header>
 
     <div class="aboutme-container" id="homeSection">
-        <p class="aboutme">Hello!! I'm Gokul Prasad, a&nbsp;Software&nbsp;developer interested in building solutions which solves real world problems and user friendly software solutions </p>
+        <p class="aboutme">Hello!! I'm Gokul Prasad,a<a class="work">&nbsp;Software&nbsp;developer&nbsp;</a> interested in building solutions which solves real world problems and user friendly software solutions </p>
         
         <div class="aboutme-socials">
             <a class="social-container" href="https://www.linkedin.com/in/gokul-prasad-n/" target="_blank">
@@ -146,22 +146,87 @@
     </div>
     
 
-    <h1 class="heading" id="contactSection">Tech Stack</h1>
-
-
-    <h1 class="heading" id="contactSection">Contact me</h1>
-    <div class="contact-container">
-        <div class="socials-card">
-            <img>
-            <a>LinkedIn</a>
+    <!-- Tech Stack section -->
+    <h1 class="heading" id="techStackSection">Tech Stack</h1>
+    <div class="techstack-list">
+        <div class="techstack-item" title="Java">
+            <img src="assets/icons/languages/java-icon.png" height="40" width="40" class="techstack-icon">
+            <span class="techstack-label">Java</span>
         </div>
-        <div class="socials-card">
-            <img>
-            <a>Github</a>
+        <div class="techstack-item" title="Python">
+            <img src="assets/icons/languages/python-icon.png" height="40" width="40" class="techstack-icon">
+            <span class="techstack-label">Python</span>
+        </div>
+        <div class="techstack-item" title="React">
+            <img src="assets/icons/languages/react-native-icon.png" height="40" width="40" class="techstack-icon">
+            <span class="techstack-label">React</span>
+        </div>
+
+        <div class="techstack-item" title="Javascript">
+            <img src="assets/icons/languages/javaScript-icon.png" height="40" width="40" class="techstack-icon">
+            <span class="techstack-label">Javascript</span>
+        </div>
+        <div class="techstack-item" title="HTML">
+            <img src="assets/icons/languages/html-icon.png" height="40" width="40" class="techstack-icon">
+            <span class="techstack-label">HTML</span>
+        </div>
+        <div class="techstack-item" title="CSS">
+            <img src="assets/icons/languages/css-icon.png" height="40" width="40" class="techstack-icon">
+            <span class="techstack-label">CSS</span>
+        </div>
+        <div class="techstack-item" title="Tailwind CSS">
+            <img src="assets/icons/languages/tailwind-css-icon.svg" height="40" width="40" class="techstack-icon">
+            <span class="techstack-label">Tailwind CSS</span>
+        </div>
+
+        <div class="techstack-item" title="Kotlin (Android)">
+            <img src="assets/icons/languages/Kotlin_Icon.png" height="40" width="40" class="techstack-icon">
+            <span class="techstack-label">Kotlin</span>
+        </div>
+
+        <div class="techstack-item" title="Git">
+            <img src="assets/icons/languages/git-icon.png" height="40" width="40" class="techstack-icon">
+            <span class="techstack-label">Git</span>
+        </div>
+
+        <div class="techstack-item" title="SQL">
+            <img src="assets/icons/languages/sql-icon.png" height="40" width="40" class="techstack-icon">
+            <span class="techstack-label">SQL</span>
         </div>
     </div>
 
+    <section class="contact-section" id="contactSection">
+        <div class="contact-links">
+            <h2 class="contact-links-heading">Connect</h2>
+            <a class="social-container" href="https://www.linkedin.com/in/gokul-prasad-n/" target="_blank">
+                <img src="assets/icons/linkedin-icon.svg" height="40" width="40" class="social-icon">
+                LinkedIn
+            </a>
+            <a class="social-container" href="https://github.com/Gokulprasad33" target="_blank">
+                <img src="assets/icons/github-icon.svg" height="40" width="40" class="social-icon">
+                Github
+            </a>
+            <!-- <a class="social-container" href="mailto:gokulprasad2k5@gmail.com">
+                <img src="assets/icons/email-icon.png" height="40" width="40" class="social-icon">
+                Email Me
+            </a> -->
+        </div>
+
+        <div class="contact-content">
+            <h1 class="contact-heading">Get In Touch</h1>
+            <p class="contact-description">
+                Have a project in mind or just want to say hello? 
+                I'm always open to discussing new ideas, creative collaborations, 
+                or opportunities to be part of something great.
+            </p>
+            <a class="social-container contact-container-child" target="_blank" href="mailto:gokulprasad2k5@gmail.com">
+                <img src="assets/icons/email-icon.png" height="40" width="40" class="social-icon">
+                Send me an Email
+            </a>
+        </div>
+    </section>
+
     <!-- Footer -->
-    <p class="copyright">Made By&nbsp;<a href="https://github.com/gokulprasad33">Gokul</a>&nbsp;© 2026</p>
+    <p class="copyright">Made By&nbsp;<a href="https://github.com/gokulprasad33" target="_blank">Gokul</a>&nbsp;© 2026</p>
 </body>
 </html>
