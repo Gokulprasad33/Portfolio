@@ -20,6 +20,15 @@ html {
 
 body {
     overflow-x: hidden; 
+    margin: 0; 
+}
+
+.full-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
 }
 
 header{
@@ -30,32 +39,38 @@ header{
 /* NavBar */
 .navbar{
     margin: 0;
-    padding: 0;
+    padding: 10px 2rem;
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center; 
+    justify-content: space-between;
 }
-.nav-container{
-    justify-content: center;
+
+.nav-left {
+    display: flex;
     align-items: center;
+    gap: 10px;
 }
+
 .website-logo-container{
-    padding-left: 5rem;
+    padding: 0;
 }
 
 .website-logo {
-    white-space: nowrap; 
+    white-space: nowrap;
+    margin: 0;
 }
 
 .link-list{
     margin: 0;
-    padding-left: 50%;
+    padding: 0;
     display: flex;
     flex-direction: row;
     list-style-type: none;
     justify-content: center;
     align-items: center;
+    gap: 8px;
 }
 
 .links{
@@ -74,6 +89,22 @@ header{
     color: #C9B59C; 
 }
 
+.burger-toggle {
+    display: none;
+}
+
+.burger-btn {
+    display: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 8px;
+}
+
+.burger-btn img {
+    background: none;
+}
+
 .work{
     background-color: #eee1d2;
 }
@@ -81,7 +112,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 15vh 10vw; 
+    padding: 4vh 10vw; 
     flex-direction: column;
 }
 
@@ -125,8 +156,10 @@ header{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    padding: 4vh 10vw 8vh;
+    padding: 4vh 10vw;
     justify-items: center;
+    flex: 1; 
+    align-content: center;
 }
 
 .techstack-item {
@@ -183,8 +216,10 @@ header{
 .project-card-vertical{
     display: flex;
     flex-direction: row;
-    padding: 10vh 10vw 30vh; 
-    justify-content: center; 
+    padding: 2vh 10vw 4vh; 
+    justify-content: center;
+    flex: 1;
+    align-items: flex-start;
 }
 
 .project-card-horizontal{
@@ -266,10 +301,11 @@ header{
 .contact-section {
     display: flex;
     flex-direction: row;
-    min-height: 100vh;
-    padding: 8vh 8vw;
+    padding: 4vh 8vw;
     gap: 6vw;
     align-items: center;
+    flex: 1; 
+    width: 100%; 
 }
 
 .contact-links {
@@ -353,30 +389,26 @@ a{
 /* Tablet */
 @media (max-width: 768px) {
 
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px 0;
+    .full-section {
+        min-height: auto;
+        padding: 4vh 0;
     }
 
-    .website-logo-container {
-        padding-left: 0;
-        text-align: center;
+    .navbar {
+        padding: 10px 1rem;
     }
 
     .link-list {
-        padding-left: 0;
-        margin-top: 10px;
-        gap: 10px;
+        gap: 4px;
     }
 
     .links {
         padding-left: 0;
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .aboutme-container {
-        padding: 10vh 5vw;
+        padding: 4vh 5vw; 
     }
 
     .aboutme {
@@ -385,7 +417,7 @@ a{
 
     .project-card-vertical {
         flex-direction: column;
-        padding: 5vh 5vw 15vh;
+        padding: 2vh 5vw 4vh; 
         align-items: center;
     }
 
@@ -457,16 +489,52 @@ a{
 /* Phone */
 @media (max-width: 480px) {
 
+    .navbar {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 10px 16px;
+    }
+
+    .nav-left {
+        flex: 1;
+    }
+
+    .burger-btn {
+        display: flex;
+        align-items: center;
+    }
+
     .website-logo {
         font-size: 18px;
     }
 
+    .link-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px 0 0;
+        margin: 0;
+        gap: 0;
+    }
+
+    .burger-toggle:checked ~ .link-list {
+        display: flex;
+    }
+
     .links {
-        font-size: 15px;
+        padding: 12px 0;
+        text-align: center;
+        font-size: 18px;
+        border-top: 1px solid #EFE9E3;
+    }
+
+    .full-section {
+        min-height: auto;
+        padding: 3vh 0;
     }
 
     .aboutme-container {
-        padding: 6vh 4vw;
+        padding: 3vh 4vw; 
     }
 
     .aboutme {
@@ -479,7 +547,7 @@ a{
     }
 
     .project-card-vertical {
-        padding: 4vh 4vw 10vh;
+        padding: 2vh 4vw 4vh; 
     }
 
     .Projectcard {
