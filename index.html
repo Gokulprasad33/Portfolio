@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gokul Prasad</title>
+    <link rel="icon" type="image/x-icon" href="imgs/favicon.ico">
+    <link rel="stylesheet" href="HomeStyle.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Nav Bar -->
+    <header>
+        <nav class="navbar">
+            <input type="checkbox" id="burger-toggle" class="burger-toggle">
+            <div class="nav-left">
+                <div class="website-logo-container">
+                    <h1 class="website-logo">&lt;Gokul&nbsp;Prasad/&gt;</h1>
+                </div>
+            </div>
+            <label for="burger-toggle" class="burger-btn" aria-label="Menu">
+                <img src="assets/icons/burger-icon.svg" width="28" height="28" alt="Menu">
+            </label>
+            <ul class="link-list">
+                <li class="links"><a class="home-link" href="#homeSection">Home</a></li>
+                <li class="links"><a class="project-link" href="#projectsSection">Projects</a></li>
+                <li class="links"><a class="contact-link" href="#contactSection">Contact</a></li>
+                <li class="links"><a class="hireme-link" href="assets/Resume.pdf" target="_blank">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="full-section" id="homeSection">
+        <div class="aboutme-container">
+            <p class="aboutme">Hello!! I'm Gokul Prasad,a<a class="work">&nbsp;Software&nbsp;developer&nbsp;</a> interested in building solutions which solves real world problems and user friendly software solutions </p>
+            
+            <div class="aboutme-socials">
+                <a class="social-container" href="https://www.linkedin.com/in/gokul-prasad-n/" target="_blank">
+                    <img src="assets/icons/linkedin-icon.svg" height="40px" width="40px" class="social-icon">
+                    LinkedIn
+                </a>
+
+                <a class="social-container" href="https://github.com/Gokulprasad33" target="_blank" >
+                    <img src="assets/icons/github-icon.svg" height="40" width="40" class="social-icon">                
+                    Github
+                </a>
+            </div>
+        </div>
+    </section>
+
+   
+    <section class="full-section" id="projectsSection">
+        <h1 class="heading">Projects</h1>
+
+        <div class="project-card-vertical">
+            <div class="project-card-horizontal">
+                <div class="Projectcard">
+                    <div>
+                        <h2 class="projectcard-name">What Should I Watch</h2>
+                        <p class="projectcard-description">A simple app that picks random movie for you based on your preferences</p>
+                        <div class="projectcard-tags-container">
+                            <p class="projectcard-tags">React</p>
+                            <p class="projectcard-tags">Python</p>
+                            <p class="projectcard-tags">Javascript</p>
+                            <p class="projectcard-tags">TailwindCss</p>
+                        </div>
+                    </div>
+                    <div class="project-preview">
+                        <img src="assets/websitePreview/moviefinderPreview.png">
+                    </div>
+                    <div class="project-link-container"> 
+                        <a href="https://github.com/Gokulprasad33/What-Should-I-Watch" target="_blank" class="previewLink">
+                            <img src="assets/icons/github-icon.svg" width="35px" height="35px"> 
+                            Source Code 
+                        </a>
+                        <a href="https://whatshouldiwatchnow.netlify.app/" target="_blank" class="previewLink">
+                            <img src="assets/icons/link-icon.png" width="30px" height=auto>
+                            Live demo
+                        </a>
+                    </div>
+                </div>
+
+                <!-- https://github.com/Gokulprasad33/BrainSync -->
+                <div class="Projectcard">
+                    <div>
+                        <h2 class="projectcard-name">Brain Sync</h2>
+                        <p class="projectcard-description">Note app made with Jetpack compose</p>
+                        <div class="projectcard-tags-container">
+                            <p class="projectcard-tags">Jetpack-compose</p>
+                            <p class="projectcard-tags">Kotlin</p>
+                            <p class="projectcard-tags">RoomDB</p>
+                        </div>
+                    </div>
+                    <div class="project-preview">
+                        <img src="assets/websitePreview/BrainSyncPreview.png">
+                    </div>
+                    <div class="project-link-container"> 
+                        <a href="https://github.com/Gokulprasad33/BrainSync" target="_blank" class="previewLink">
+                            <img src="assets/icons/github-icon.svg" width="35px" height="35px"> 
+                            Source Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card-horizontal">
+                <!-- https://github.com/Gokulprasad33/pomodoro-extension -->
+                <div class="Projectcard">
+                    <div>
+                        <h2 class="projectcard-name">Pomodoro Extension</h2>
+                        <p class="projectcard-description">Pomodoro timer browser extension</p>
+                        <div class="projectcard-tags-container">
+                            <p class="projectcard-tags">Javascript</p>
+                            <p class="projectcard-tags">CSS</p>
+                            <p class="projectcard-tags">Git</p>
+                        </div>
+                    </div>
+                    <div class="project-preview">
+                        <img src="assets/websitePreview/pomodorotimer.png">
+                    </div>
+                    <div class="project-link-container"> 
+                        <a href="https://github.com/Gokulprasad33/pomodoro-extension" target="_blank" class="previewLink">
+                            <img src="assets/icons/github-icon.svg" width="35px" height="35px"> 
+                            Source Code
+                        </a>
+                    </div>
+                </div>
+            
+                <!-- https://github.com/Gokulprasad33/Calculator-extension -->
+                <div class="Projectcard">
+                    <div>
+                        <h2 class="projectcard-name">Calculator extension</h2>
+                        <p class="projectcard-description">Calculator browser extension</p>
+                        <div class="projectcard-tags-container">
+                            <p class="projectcard-tags">Html</p>
+                            <p class="projectcard-tags">Javascript</p>
+                            <p class="projectcard-tags">CSS</p>
+                            <p class="projectcard-tags">Git</p>
+                        </div>
+                    </div>
+                    <div class="project-preview">
+                        <img src="assets/websitePreview/calculator.png">
+                    </div>
+                    <div class="project-link-container"> 
+                        <a href="https://github.com/Gokulprasad33/Calculator-extension" target="_blank" class="previewLink">
+                            <img src="assets/icons/github-icon.svg" width="35px" height="35px"> 
+                            Source Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="full-section" id="techStackSection">
+        <h1 class="heading">Tech Stack</h1>
+        <div class="techstack-list">
+            <div class="techstack-item" title="Java">
+                <img src="assets/icons/languages/java-icon.png" height="40" width="40" class="techstack-icon">
+                <span class="techstack-label">Java</span>
+            </div>
+            <div class="techstack-item" title="Python">
+                <img src="assets/icons/languages/python-icon.png" height="40" width="40" class="techstack-icon">
+                <span class="techstack-label">Python</span>
+            </div>
+            <div class="techstack-item" title="React">
+                <img src="assets/icons/languages/react-native-icon.png" height="40" width="40" class="techstack-icon">
+                <span class="techstack-label">React</span>
+            </div>
+            <div class="techstack-item" title="Javascript">
+                <img src="assets/icons/languages/javaScript-icon.png" height="40" width="40" class="techstack-icon">
+                <span class="techstack-label">Javascript</span>
+            </div>
+            <div class="techstack-item" title="HTML">
+                <img src="assets/icons/languages/html-icon.png" height="40" width="40" class="techstack-icon">
+                <span class="techstack-label">HTML</span>
+            </div>
+            <div class="techstack-item" title="CSS">
+                <img src="assets/icons/languages/css-icon.png" height="40" width="40" class="techstack-icon">
+                <span class="techstack-label">CSS</span>
+            </div>
+            <div class="techstack-item" title="Tailwind CSS">
+                <img src="assets/icons/languages/tailwind-css-icon.svg" height="40" width="40" class="techstack-icon">
+                <span class="techstack-label">Tailwind CSS</span>
+            </div>
+            <div class="techstack-item" title="Kotlin (Android)">
+                <img src="assets/icons/languages/Kotlin_Icon.png" height="40" width="40" class="techstack-icon">
+                <span class="techstack-label">Kotlin</span>
+            </div>
+            <div class="techstack-item" title="Git">
+                <img src="assets/icons/languages/git-icon.png" height="40" width="40" class="techstack-icon">
+                <span class="techstack-label">Git</span>
+            </div>
+            <div class="techstack-item" title="SQL">
+                <img src="assets/icons/languages/sql-icon.png" height="40" width="40" class="techstack-icon">
+                <span class="techstack-label">SQL</span>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="full-section" id="contactSection">
+        
+        <div class="contact-section">
+            <div class="contact-links">
+                <h2 class="contact-links-heading">Connect</h2>
+                <a class="social-container" href="https://www.linkedin.com/in/gokul-prasad-n/" target="_blank">
+                    <img src="assets/icons/linkedin-icon.svg" height="40" width="40" class="social-icon">
+                    LinkedIn
+                </a>
+                <a class="social-container" href="https://github.com/Gokulprasad33" target="_blank">
+                    <img src="assets/icons/github-icon.svg" height="40" width="40" class="social-icon">
+                    Github
+                </a>
+            </div>
+
+            <div class="contact-content">
+                <h1 class="contact-heading">Get In Touch</h1>
+                <p class="contact-description">
+                    Have a project in mind or just want to say hello? 
+                    I'm always open to discussing new ideas, creative collaborations, 
+                    or opportunities to be part of something great.
+                </p>
+                <a class="social-container contact-container-child" target="_blank" href="mailto:gokulprasad2k5@gmail.com">
+                    <img src="assets/icons/email-icon.png" height="40" width="40" class="social-icon">
+                    Send me an Email
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <p class="copyright">Made By&nbsp;<a href="https://github.com/gokulprasad33" target="_blank">Gokul</a>&nbsp;© 2026</p>
+</body>
+</html>
